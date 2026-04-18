@@ -13,26 +13,27 @@
 
 // Examples
 let name = "Learner"; // string
-const age = 25; // number, can't change
+const age = 20; // number, can't change
 let isReady = true; // boolean
 
 console.log("Hi,", name, "- Age:", age, "- Ready?", isReady);
 
 // TODO 1: Create variable for your city (string), log "I live in [city]"
-let city = "";
+let city = "Gingoog city";
 console.log("I live in", city);
 
 // Self-check TODO 1
 if (typeof city === "string" && city.length > 0) {
+  // city.length counts charactes  > o must not empty. the city must be string not a number
   console.log(" TODO 1: Good city!");
 } else {
-  console.log(" TODO 1: Set a city string");
+  console.log(" invalid city ");
 }
 
 // TODO 2: Calculate area of rectangle (length=10, width=5), log it
 let length = 10;
 let width = 5;
-let area = 0;
+let area = 50;
 console.log("Rectangle area:", area);
 
 // Self-check TODO 2
@@ -43,6 +44,7 @@ if (area === 50) {
 }
 
 // TODO 3: Check if age >= 18 && isReady, log "Can drive!" or "Wait"
+
 if (age >= 18 && isReady) {
   console.log("Can drive!");
 } else {
