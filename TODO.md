@@ -11,7 +11,7 @@ Daily challenges building from basics to advanced JS. Edit each `dayN.js` file:
 
 ## Progress Tracker
 
-- [ ] Day 1: Variables, Data Types, Operators
+- [x] Day 1: Variables, Data Types, Operators
 - [ ] Day 2: Control Flow (if/else, switch)
 - [ ] Day 3: Loops (for, while, forEach)
 - [ ] Day 4: Functions & Scope
