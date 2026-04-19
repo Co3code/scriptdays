@@ -66,7 +66,7 @@ switch (dayNum) {
     break;
 
   case 5:
-    dayMessage = "TGIF";
+    dayMessage = "TGIF!";
     break;
 
   case 6:
@@ -92,6 +92,17 @@ if (dayMessage === "TGIF!") {
 let light = "red"; // Test value
 let action;
 // if (light === "red") ...
+if (light === "red") {
+  action = "STOP";
+}
+if (light === "yellow") {
+  action = "SLOW";
+}
+if (light === "green") {
+  action = "GO";
+} else {
+  ("invalid");
+}
 
 console.log("Light action:", action);
 
