@@ -22,12 +22,13 @@ console.log("square(4):", square(4)); // 16
 const double = (n) => n * 2;
 console.log("double(5):", double(5)); // 10
 
-// Scope example
+// Scope example score is where a variable is allowed to exist and be used
 function scopeDemo() {
   let inner = "I'm inside";
   return inner;
 }
 console.log("scopeDemo():", scopeDemo());
+
 // console.log(inner); // ← would throw ReferenceError
 
 // ─────────────────────────────────────────────
@@ -35,7 +36,10 @@ console.log("scopeDemo():", scopeDemo());
 // Then call it with 7 and 3 and store the result in `result1`.
 
 // your code here
-
+function add(a, b) {
+  return a + b;
+}
+let result1 = 7 + 3;
 // Self-check TODO 1
 if (typeof add === "function" && result1 === 10) {
   console.log("✓ TODO 1: add(7, 3) =", result1);
@@ -48,7 +52,11 @@ if (typeof add === "function" && result1 === 10) {
 // false otherwise. Store isEven(4) in `result2` and isEven(7) in `result3`.
 
 // your code here
-
+const isEven = (n) => {
+  return n % 2 === 0;
+};
+const result2 = isEven(4);
+const result3 = isEven(7);
 // Self-check TODO 2
 if (typeof isEven === "function" && result2 === true && result3 === false) {
   console.log("✓ TODO 2: isEven works correctly");
@@ -63,7 +71,11 @@ if (typeof isEven === "function" && result2 === true && result3 === false) {
 // Store repeat("hi", 4) in `result4`.
 
 // your code here
+function repeat(str, n) {
+  return str.repeat(n);
+}
 
+const result4 = repeat("hi", 4);
 // Self-check TODO 3
 if (typeof repeat === "function" && result4 === "hihihihi") {
   console.log("✓ TODO 3: repeat works correctly");
