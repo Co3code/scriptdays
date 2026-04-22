@@ -14,8 +14,8 @@ Daily challenges building from basics to advanced JS. Edit each `dayN.js` file:
 - [x] Day 1: Variables, Data Types, Operators
 - [x] Day 2: Control Flow (if/else, switch)
 - [x] Day 3: Loops (for, while, forEach)
-- [ ] Day 4: Functions & Scope
-- [ ] Day 5: Arrays Basics
+- [x] Day 4: Functions & Scope
+- [x] Day 5: Arrays Basics
 - [ ] Day 6: Array Methods (map, filter, reduce)
 - [ ] Day 7: Objects & JSON
 - [ ] Day 8: Strings & Template Literals
