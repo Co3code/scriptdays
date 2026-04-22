@@ -39,7 +39,7 @@ console.log("scopeDemo():", scopeDemo());
 function add(a, b) {
   return a + b;
 }
-let result1 = 7 + 3;
+let result1 = add(7, 3);
 // Self-check TODO 1
 if (typeof add === "function" && result1 === 10) {
   console.log("✓ TODO 1: add(7, 3) =", result1);
@@ -74,7 +74,7 @@ if (typeof isEven === "function" && result2 === true && result3 === false) {
 function repeat(str, n) {
   return str.repeat(n);
 }
-
+//store  repeat() in result4
 const result4 = repeat("hi", 4);
 // Self-check TODO 3
 if (typeof repeat === "function" && result4 === "hihihihi") {
