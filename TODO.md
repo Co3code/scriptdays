@@ -16,7 +16,7 @@ Daily challenges building from basics to advanced JS. Edit each `dayN.js` file:
 - [x] Day 3: Loops (for, while, forEach)
 - [x] Day 4: Functions & Scope
 - [x] Day 5: Arrays Basics
-- [ ] Day 6: Array Methods (map, filter, reduce)
+- [x] Day 6: Array Methods (map, filter, reduce)
 - [ ] Day 7: Objects & JSON
 - [ ] Day 8: Strings & Template Literals
 - [ ] Day 9: Numbers & Math
