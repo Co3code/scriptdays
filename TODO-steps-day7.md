@@ -1,0 +1,8 @@
+# Day 7: Objects & JSON
+
+## Steps
+
+1. [x] Create day7.js with lesson, 3 TODO object exercises, self-checks
+2. [ ] Verify `node day7.js` runs (lesson + TODOs show ✗)
+3. [ ] Complete TODOs, re-run for ✓ checks (all pass)
+4. [ ] Mark [x] in TODO.md

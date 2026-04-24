@@ -70,7 +70,7 @@ if (
 ) {
   console.log("✓ TODO 3: findIndex works");
 } else {
-  console.log("✗ TODO 3: define findIndex(arr, val)");
+  console.log("✗ TODO 3: define findIndex(arr, val)");git
 }
 
 // Solve all → all ✓ ! Mark Day 5 [x] in TODO.md
