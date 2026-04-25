@@ -73,8 +73,9 @@ if (typeof shout !== "undefined" && typeof hasJS !== "undefined" && shout === "I
 // "$X.00" using a template literal. e.g. formatPrice(25) → "$25.00"
 
 // your code here
-function formatPrice(num) {
-  return `$${num.toFixed(2)}`;
+function formatPrice(num) { 
+  return `$${num.toFixed(2)}`; // num.toFixed(2) converts number → string forces 2 decimal places
+  // ${} → insert formatted number $ → currency symbol
 }
 
 // Self-check TODO 3
