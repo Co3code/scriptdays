@@ -8,6 +8,10 @@
 - [x] Day 4
 - [x] Day 5
 - [x] Day 6
+- [x] Day 7
 
+## In Progress
 
-Run `node day5.js` to test.
+- [ ] Day 8: Strings & Template Literals
+
+Run `node day8.js` to test.
