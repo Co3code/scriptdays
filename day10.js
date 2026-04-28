@@ -25,10 +25,6 @@
 // ─────────────────────────────────────────────
 
 // Examples
-let demoCalc = {
-  value: 0,
-  history: [],
-};
 
 // ─────────────────────────────────────────────
 // TODO 1: Create a `calculator` object with:
@@ -45,13 +41,42 @@ let demoCalc = {
 let calculator = {
   value: 0,
   history: [],
-  add(n) {},
-  subtract(n) {},
-  reset() {},
-  multiply(n) {},
-  divide(n) {},
+
+  add(n) {
+    this.value += n;
+    this.history.push(`added ${n} → ${this.value}`);
+  },
+
+  subtract(n) {
+    this.value -= n;
+    this.history.push(`subtracted ${n} → ${this.value}`);
+  },
+
+  reset() {
+    this.value = 0;
+    this.history.push(`reset → 0`);
+  },
+
+  multiply(n) {
+    this.value *= n;
+    this.history.push(`multiplied ${n} → ${this.value}`);
+  },
+
+  divide(n) {
+    if (n === 0) {
+      this.history.push("error: divide by zero");
+    } else {
+      this.value /= n;
+      this.history.push(`divided ${n} → ${this.value}`);
+    }
+  },
+
   getStats() {
-    return {};
+    return {
+      totalOperations: this.history.length,
+      additions: this.history.filter((h) => h.includes("added")).length,
+      errors: this.history.filter((h) => h.includes("error")).length,
+    };
   },
 };
 
@@ -118,7 +143,7 @@ calculator.divide(0);
 let stats = calculator.getStats ? calculator.getStats() : {};
 let check3 =
   typeof calculator.getStats === "function" &&
-  stats.totalOperations === 3 &&
+  stats.totalOperations === 4 && // ← include the reset
   stats.additions === 2 &&
   stats.errors === 1;
 
@@ -127,5 +152,4 @@ if (check3) {
 } else {
   console.log("✗ TODO 3: add getStats() returning { totalOperations, additions, errors }");
 }
-
 // Solve all → all ✓ ! Mark Day 10 [x] in TODO.md
