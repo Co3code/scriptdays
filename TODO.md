@@ -17,10 +17,10 @@ Daily challenges building from basics to advanced JS. Edit each `dayN.js` file:
 - [x] Day 4: Functions & Scope
 - [x] Day 5: Arrays Basics
 - [x] Day 6: Array Methods (map, filter, reduce)
-- [ ] Day 7: Objects & JSON
-- [ ] Day 8: Strings & Template Literals
-- [ ] Day 9: Numbers & Math
-- [ ] Day 10: Review Week 1 - Mini Project: Calculator
+- [x] Day 7: Objects & JSON
+- [x] Day 8: Strings & Template Literals
+- [x] Day 9: Numbers & Math
+- [x] Day 10: Review Week 1 - Mini Project: Calculator
 - [ ] Day 11: DOM Intro (HTML/JS setup)
 - [ ] Day 12: Events & Event Listeners
 - [ ] Day 13: Selecting & Manipulating Elements
