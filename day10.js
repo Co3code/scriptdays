@@ -11,6 +11,7 @@
  * - Numbers & Math (Day 9)
  *
  * PROJECT: Build a Calculator object with methods that use all the above.
+ * --A calculator system that remembers everything you do
  *
  * Run: node day10.js
  * Expected: Solve TODOs → all ✓ checks
@@ -39,32 +40,32 @@
 
 // your code here
 let calculator = {
-  value: 0,
-  history: [],
+  value: 0, // current result
+  history: [], // list of action 
 
   add(n) {
-    this.value += n;
-    this.history.push(`added ${n} → ${this.value}`);
+    this.value += n; //Increase value
+    this.history.push(`added ${n} → ${this.value}`); // Save what happened
   },
 
   subtract(n) {
-    this.value -= n;
+    this.value -= n; //decrease value + log it
     this.history.push(`subtracted ${n} → ${this.value}`);
   },
 
   reset() {
-    this.value = 0;
+    this.value = 0; // resets calculator
     this.history.push(`reset → 0`);
   },
 
   multiply(n) {
-    this.value *= n;
+    this.value *= n; // multiply current value
     this.history.push(`multiplied ${n} → ${this.value}`);
   },
 
   divide(n) {
-    if (n === 0) {
-      this.history.push("error: divide by zero");
+    if (n === 0) {   //Prevent invalid math
+      this.history.push("error: divide by zero"); // logs error instead of crashing
     } else {
       this.value /= n;
       this.history.push(`divided ${n} → ${this.value}`);
