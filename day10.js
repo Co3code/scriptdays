@@ -65,16 +65,16 @@ let calculator = {
 
   divide(n) {
     if (n === 0) {   //Prevent invalid math
-      this.history.push("error: divide by zero"); // logs error instead of crashing
+      this.history.push("error: divide by zero"); // logs error instead of crashing .. dividing by 0 = error screen 
     } else {
       this.value /= n;
-      this.history.push(`divided ${n} → ${this.value}`);
+      this.history.push(`divided ${n} → ${this.value}`); // logic this object itself like my history my value 
     }
   },
 
   getStats() {
     return {
-      totalOperations: this.history.length,
+      totalOperations: this.history.length, // Analyze history and return summary
       additions: this.history.filter((h) => h.includes("added")).length,
       errors: this.history.filter((h) => h.includes("error")).length,
     };

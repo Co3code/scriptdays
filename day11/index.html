@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 11: DOM Intro</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .lesson {
+        background: #f0f8ff;
+        padding: 20px;
+        margin: 20px 0;
+        border-left: 5px solid #007acc;
+      }
+      .todo {
+        background: #fff3cd;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 5px;
+        background: #007acc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #005a9e;
+      }
+      #output {
+        margin-top: 20px;
+        padding: 15px;
+        background: #e8f4f8;
+        border-radius: 4px;
+        min-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Day 11: DOM Intro</h1>
+
+    <div class="lesson">
+      <h2>LESSON: Document Object Model</h2>
+      <ul>
+        <li><code>document.getElementById('id')</code> → select element by ID</li>
+        <li><code>document.querySelector('.class')</code> → first element matching selector</li>
+        <li><code>document.querySelectorAll('.class')</code> → all matching elements (NodeList)</li>
+        <li><code>element.textContent</code> → get/set text</li>
+        <li><code>element.style.property</code> → get/set CSS styles</li>
+        <li><code>element.classList.add/remove/toggle</code> → manage CSS classes</li>
+        <li><code>element.innerHTML</code> → get/set HTML content</li>
+      </ul>
+    </div>
+
+    <div class="todo">
+      <h3>TODO 1: Select elements & change text</h3>
+      <p id="greeting">Hello, World!</p>
+      <button onclick="runTodo1()">Run TODO 1</button>
+    </div>
+
+    <div class="todo">
+      <h3>TODO 2: Style manipulation</h3>
+      <div id="box" style="width: 100px; height: 100px; background: blue; transition: all 0.3s"></div>
+      <button onclick="runTodo2()">Toggle Color</button>
+    </div>
+
+    <div class="todo">
+      <h3>TODO 3: Create element dynamically</h3>
+      <ul id="dynamic-list">
+        <li>Static item</li>
+      </ul>
+      <button onclick="runTodo3()">Add Item</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script src="day11.js"></script>
+  </body>
+</html>
