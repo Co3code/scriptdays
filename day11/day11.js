@@ -1,4 +1,5 @@
 // Day 11: DOM Intro
+// i will continue this tomorrow cause  im very busy  
 // LESSON REVIEW: document.getElementById, querySelector, textContent, style, classList
 
 // ─────────────────────────────────────────────
