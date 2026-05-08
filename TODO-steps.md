@@ -9,9 +9,11 @@
 - [x] Day 5
 - [x] Day 6
 - [x] Day 7
+- [x] Day 8: Strings & Template Literals
+- [x] Day 9: Numbers & Math
 
 ## In Progress
 
-- [ ] Day 8: Strings & Template Literals
+- [ ] Day 10: Review Week 1 - Mini Project: Calculator
 
-Run `node day8.js` to test.
+Run `node day10.js` to test.
