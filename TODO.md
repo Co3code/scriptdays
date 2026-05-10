@@ -22,7 +22,7 @@ Daily challenges building from basics to advanced JS. Edit each `dayN.js` file:
 - [x] Day 9: Numbers & Math
 - [x] Day 10: Review Week 1 - Mini Project: Calculator
 - [x] Day 11: DOM Intro (HTML/JS setup)
-- [ ] Day 12: Events & Event Listeners
+- [x] Day 12: Events & Event Listeners
 - [ ] Day 13: Selecting & Manipulating Elements
 - [ ] Day 14: Forms & Validation
 - [ ] Day 15: LocalStorage
