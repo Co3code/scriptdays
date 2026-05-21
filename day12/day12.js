@@ -14,12 +14,12 @@ function initTodo1() {
   //waits for button click
   clickBtn.addEventListener("click", () => {
     //changes text
-    status.textContent = "Status: clicked!";
+    status.textContent = "clinked";
 
     if (todo1Toggle) {
       box.style.backgroundColor = "blue";
     } else {
-      box.style.backgroundColor = "red";
+      box.style.backgroundColor = "green";
     }
 
     todo1Toggle = !todo1Toggle;
@@ -37,23 +37,26 @@ function initTodo2() {
 
   function addTaskFromInput() {
     const text = taskInput.value.trim();
-    if (!text) return;
+    if (!text) return; // if way task dili mag result ug naa mag result
 
-    const li = document.createElement("li");
-    li.textContent = text;
-    taskList.appendChild(li);
+    const li = document.createElement("li"); // Create a new <li> element in memory.
+    li.textContent = text; //Put the task text inside the new <li> element.
+    taskList.appendChild(li); // Add the new <li> to the task list on the page. add someting
 
-    taskInput.value = "";
-    taskInput.focus();
+    taskInput.value = ""; // clear the input fielt so the user can type a new task
+    taskInput.focus(); // Purpose: Move the cursor back into the input field so the user can start typing immediately.
   }
-
+  // Listen for any key press while the user is typing in the input field.
+  // keydown listens for any keyboard key being pressed.
   taskInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-      addTaskFromInput();
+      addTaskFromInput(); // calls your function to add the task if enter was pressed
     }
   });
 
-  addBtn.addEventListener("click", addTaskFromInput);
+  addBtn.addEventListener("click", addTaskFromInput); // → calls addTaskFromInput when the button is clicked.
+
+  // The user can either press Enter or click the Add button to add a task.
 }
 
 // TODO 3: Mouse move event (update coordinates)
