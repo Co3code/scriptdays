@@ -8,6 +8,11 @@
  * - parameters & return values
  * - scope: var (function), let/const (block), global
  *   - variables declared inside a function are NOT accessible outside
+ * Group code into one reusable unit
+ * Avoid repeating code
+ * Organize logic
+ * Accept input and return output
+ * Execute only when called  
  *
  * Run: node day4.js
  * Expected: Solve TODOs → all ✓ checks
