@@ -9,18 +9,25 @@ if (typeof document !== "undefined") {
   // - For each: set textContent to uppercase
   // - Add a blue border via inline style
   const tagsBtn = document.getElementById("tagsBtn");
-  tagsBtn.addEventListener("click", () => {
-    const tags = document.querySelectorAll(".tag");
-    tags.forEach((tag) => {
-      tag.textContent = tag.textContent.toUpperCase();
-      tag.style.border = "2px solid #007acc";
-      tag.style.padding = "6px 10px";
-      tag.style.marginRight = "8px";
-      tag.style.display = "inline-block";
-    });
+  if (tagsBtn) {
+    tagsBtn.addEventListener("click", () => {
+      const tags = document.querySelectorAll(".tag");
+      tags.forEach((tag) => {
+        if (tag.textContent === tag.textContent.toUpperCase()) {
+          tag.textContent = tag.textContent.toLowerCase();
+        } else {
+          tag.textContent = tag.textContent.toUpperCase();
+        }
 
-    if (output) output.textContent = "✓ TODO 1 complete (styled tags)";
-  });
+        tag.style.border = "2px solid #007acc";
+        tag.style.padding = "6px 10px";
+        tag.style.marginRight = "8px";
+        tag.style.display = "inline-block";
+      });
+
+      if (output) output.textContent = "✓ TODO 1 complete (styled tags)";
+    });
+  }
 
   // TODO 2: classList toggle visibility
   // - Clicking Toggle button toggles #box hidden state
@@ -30,7 +37,7 @@ if (typeof document !== "undefined") {
   const toggleStatus = document.getElementById("toggleStatus");
 
   toggleBtn.addEventListener("click", () => {
-    box.classList.toggle("hidde n");// aad or remove  "hidden" class  - classList means access element classes
+    box.classList.toggle("hidden"); // aad or remove  "hidden" class  - classList means access element classes
     if (toggleStatus) {
       const isHidden = box.classList.contains("hidden");
       toggleStatus.textContent = `Status: ${isHidden ? "hidden" : "visible"}`; //Ternary Operator
