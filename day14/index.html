@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 14: Forms & Validation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .lesson {
+        background: #f0f8ff;
+        padding: 20px;
+        margin: 20px 0;
+        border-left: 5px solid #007acc;
+      }
+      .todo {
+        background: #fff3cd;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 6px;
+        font-weight: 600;
+      }
+      input {
+        padding: 10px;
+        width: 320px;
+        max-width: 100%;
+      }
+      button {
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: #007acc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #005a9e;
+      }
+      .msg {
+        margin-top: 8px;
+        padding: 10px;
+        border-radius: 4px;
+        min-height: 44px;
+      }
+      .error {
+        background: #ffe6e6;
+        color: #a20000;
+        border: 1px solid #ffb3b3;
+      }
+      .success {
+        background: #e6ffef;
+        color: #0b6b2f;
+        border: 1px solid #7af0a0;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Day 14: Forms &amp; Validation</h1>
+
+    <div class="lesson">
+      <h2>LESSON: Forms</h2>
+      <ul>
+        <li>Use <code>input</code>/<code>submit</code> events to validate user data.</li>
+        <li>Update UI with a message area: success/error styling.</li>
+        <li>Use <code>event.preventDefault()</code> to stop invalid form submit.</li>
+      </ul>
+    </div>
+
+    <form class="todo" id="signupForm">
+      <h3>TODO 1: Validate name + email before submit</h3>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" />
+
+      <label for="email">Email</label>
+      <input id="email" type="text" placeholder="Enter your email" />
+
+      <button id="submitBtn" type="submit">Submit</button>
+
+      <div id="formMessage" class="msg" aria-live="polite"></div>
+    </form>
+
+    <div class="todo">
+      <h3>TODO 2: Password strength message</h3>
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter a password" />
+      <div id="pwMessage" class="msg" aria-live="polite"></div>
+    </div>
+
+    <script src="day14.js"></script>
+  </body>
+</html>
